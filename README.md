@@ -1,4 +1,4 @@
-Responsive Groww Website Landing Page
+<h1>Responsive Groww Website Landing Page</h1>
 
 Responsive Coffee Shop Landing Page using HTML, CSS & JavaScript
 Contains animations when moving coursor
