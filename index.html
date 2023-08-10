@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive Landing Page with Nav Menu</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="Images/logo.png" alt="" />
+
+      <section class="menu">
+        <ul class="menu-list">
+          <li class="active">Home</li>
+          <li>Product</li>
+          <li>About Us</li>
+          <li>Contact</li>
+        </ul>
+
+        <button>
+          <i class="fas fa-times"></i>
+          <i class="fas fa-bars"></i>
+        </button>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="left">
+        <h1 class="title">Invest in everything</h1>
+        <h2 class="msg">Built for a growwing India.</h2>
+        <button class="cta">Get Started</button>
+      </section>
+
+      <section class="right">
+        <lottie-player
+          src="https://lottie.host/92a65a02-c31d-4b97-9fcf-ece7d3c25a32/ZAjYTeOe7Q.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+      </section>
+
+      <section class="right1">
+        <img
+          src="Images/g_feature-web-development-3.svg"
+          alt="Langing image"
+          controls
+        />
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script>
+      var menu = document.querySelector(".menu");
+      var menuBtn = document.querySelector(".menu button");
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("opened");
+      });
+    </script>
+
+    <footer class="footer">
+      &copy; © 2016 - 2023 Groww. All rights reserved, Built with Love in India.
+    </footer>
+  </body>
+</html>
